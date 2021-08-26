@@ -3,23 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babylonjs/core": "^4.0.3",
+    "@babylonjs/inspector": "^4.0.3",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "micro-game-shell": "^0.2.0",
+    "noa-engine": "github:andyhall/noa#develop",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4",
-    "@babylonjs/core": "^4.0.3",
-    "@babylonjs/inspector": "^4.0.3",
-    "noa-engine": "github:andyhall/noa#develop",
-    "voxel-crunch": "^0.2.1"
+    "voxel-crunch": "^0.2.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": [

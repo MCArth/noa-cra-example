@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Engine from 'noa-engine'
+import { Engine } from 'noa-engine'
 import { initRegistration } from './gameSource/registration'
 import { initWorldGen } from './gameSource/worldgen'
 import { setupPlayerEntity } from './gameSource/entities'
@@ -32,8 +32,8 @@ var noa = new Engine({
     inverseY: false,
     inverseX: false,
     chunkSize: 32,
-    chunkAddDistance: 3.5,
-    chunkRemoveDistance: 3.0,
+    chunkAddDistance: 1,
+    chunkRemoveDistance: 2,
     blockTestDistance: 50,
     texturePath: 'textures/',
     playerStart: [0.5, 5, 0.5],
